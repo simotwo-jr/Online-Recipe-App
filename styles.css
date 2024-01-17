@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+  }
+  header img {
+    width: 100px;
+    height: auto;
+    
+  }
+  .tasty-tracks{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+  }
+   
+  header {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    background-color: #d58813;
+    padding: 20px;
+  }
+  
