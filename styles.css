@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    
 }
 body {
     font-family: "Poppins";
@@ -24,4 +25,11 @@ body {
     background-color: #d58813;
     padding: 20px;
   }
+  main img {
+    margin: 0;
+    height: auto;
+  
+
+  }
+  
   
