@@ -151,6 +151,27 @@
       instructions: instructions
     };
 
+    // Send the new recipe data to the server
+    fetch('http://localhost:3000/recipes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newRecipe)
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Recipe added successfully!');
+          recipeForm.reset(); 
+          fetchRecipes(); 
+        } else {
+          throw new Error('Failed to add recipe');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
   })
   });
 </script>
