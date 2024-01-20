@@ -24,6 +24,10 @@ recipeCloseBtn.addEventListener('click', () => {
   // Function to get the meal list that matches the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
+
+    // Fetch the data from the API
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
+    .then(response => response.json())
 }
   
 
