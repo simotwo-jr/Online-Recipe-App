@@ -10,7 +10,10 @@ const mealDetailsContent = document.querySelector('.meal-details-content');
 // Get the recipe close button element
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
-// Event listener for the search button click
+// Event listener for the search button
 searchBtn.addEventListener('click', getMealList);
+
+// Event listener for the meal list click
+mealList.addEventListener('click', getMealRecipe);
 
 
