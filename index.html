@@ -131,6 +131,22 @@
     </ul>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const recipeForm = document.getElementById('recipe-form');
+  const recipesContainer = document.getElementById('recipes-container')
+
+  recipeForm.addEventListener('submit', event => {
+    event.preventDefault();
+    // Get the values from the form inputs
+    const title = document.getElementById('title').value;
+    const ingredients = document.getElementById('ingredients').value;
+    const instructions = document.getElementById('instructions').value;
+
+  })
+  });
+</script>
       
   
   
