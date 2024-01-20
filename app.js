@@ -29,6 +29,10 @@ function getMealList() {
 function getMealRecipe(e) {
     e.preventDefault();
 }
+// Fetch the recipe data from the API based on the selected meal ID
+fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+.then(response => response.json())
+.then(data => mealRecipeModal(data.meals));
 
 }
 
